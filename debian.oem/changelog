@@ -1,6 +1,7 @@
-linux-oem-5.4 (5.4.0-1002.3) focal; urgency=medium
+linux-oem-5.4 (5.4.0-1002.4) focal; urgency=medium
 
   * focal/linux-oem-5.4: 5.4.0-1002.3 -proposed tracker (LP: #1858879)
+  * UBUNTU: [Packaging] Remove python-dev build dependency
 
   [ Ubuntu: 5.4.0-11.14 ]
 
