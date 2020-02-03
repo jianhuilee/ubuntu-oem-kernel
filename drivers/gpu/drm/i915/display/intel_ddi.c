@@ -1999,10 +1999,12 @@ void intel_ddi_disable_transcoder_func(const struct intel_crtc_state *crtc_state
 	val &= ~TRANS_DDI_FUNC_ENABLE;
 
 	if (INTEL_GEN(dev_priv) >= 12) {
-		if (!intel_dp_mst_is_master_trans(crtc_state))
-			val &= ~TGL_TRANS_DDI_PORT_MASK;
+		if (!intel_dp_mst_is_master_trans(crtc_state)) {
+			val &= ~(TGL_TRANS_DDI_PORT_MASK |
+				 TRANS_DDI_MODE_SELECT_MASK);
+		}
 	} else {
-		val &= ~TRANS_DDI_PORT_MASK;
+		val &= ~(TRANS_DDI_PORT_MASK | TRANS_DDI_MODE_SELECT_MASK);
 	}
 	I915_WRITE(TRANS_DDI_FUNC_CTL(cpu_transcoder), val);
 
@@ -3799,7 +3801,8 @@ static void intel_ddi_post_disable_dp(struct intel_encoder *encoder,
 			u32 val;
 
 			val = I915_READ(TRANS_DDI_FUNC_CTL(cpu_transcoder));
-			val &= ~TGL_TRANS_DDI_PORT_MASK;
+			val &= ~(TGL_TRANS_DDI_PORT_MASK |
+				 TRANS_DDI_MODE_SELECT_MASK);
 			I915_WRITE(TRANS_DDI_FUNC_CTL(cpu_transcoder), val);
 		}
 	} else {
