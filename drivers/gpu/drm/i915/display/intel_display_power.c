@@ -4480,6 +4480,10 @@ static void icl_mbus_init(struct drm_i915_private *dev_priv)
 		MBUS_ABOX_B_CREDIT(1) |
 		MBUS_ABOX_BW_CREDIT(1);
 	I915_WRITE(MBUS_ABOX_CTL, val);
+	if (INTEL_GEN(dev_priv) >= 12) {
+		I915_WRITE(MBUS_ABOX1_CTL, val);
+		I915_WRITE(MBUS_ABOX2_CTL, val);
+	}
 }
 
 static void hsw_assert_cdclk(struct drm_i915_private *dev_priv)
