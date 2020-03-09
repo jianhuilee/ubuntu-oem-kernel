@@ -6174,6 +6174,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	abx500_startup_irq_enabled
 EXPORT_SYMBOL vmlinux 0x00000000	account_page_redirty	
 EXPORT_SYMBOL vmlinux 0x00000000	acpi_acquire_global_lock	
 EXPORT_SYMBOL vmlinux 0x00000000	acpi_acquire_mutex	
+EXPORT_SYMBOL vmlinux 0x00000000	acpi_any_gpe_status_set	
 EXPORT_SYMBOL vmlinux 0x00000000	acpi_attach_data	
 EXPORT_SYMBOL vmlinux 0x00000000	acpi_bios_error	
 EXPORT_SYMBOL vmlinux 0x00000000	acpi_bios_exception	
@@ -6838,7 +6839,6 @@ EXPORT_SYMBOL vmlinux 0x00000000	cpu_tss_rw
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_generic_suspend	
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_get	
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_get_policy	
-EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_global_kobject	
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_quick_get	
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_quick_get_max	
 EXPORT_SYMBOL vmlinux 0x00000000	cpufreq_register_notifier	
@@ -7850,7 +7850,9 @@ EXPORT_SYMBOL vmlinux 0x00000000	i8042_unlock_chip
 EXPORT_SYMBOL vmlinux 0x00000000	i8253_lock	
 EXPORT_SYMBOL vmlinux 0x00000000	icmp_err_convert	
 EXPORT_SYMBOL vmlinux 0x00000000	icmp_global_allow	
+EXPORT_SYMBOL vmlinux 0x00000000	icmp_ndo_send	
 EXPORT_SYMBOL vmlinux 0x00000000	icmpv6_err_convert	
+EXPORT_SYMBOL vmlinux 0x00000000	icmpv6_ndo_send	
 EXPORT_SYMBOL vmlinux 0x00000000	icmpv6_send	
 EXPORT_SYMBOL vmlinux 0x00000000	ida_alloc_range	
 EXPORT_SYMBOL vmlinux 0x00000000	ida_destroy	
@@ -8887,6 +8889,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	netdev_master_upper_dev_link
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_max_backlog	
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_name_node_alt_create	
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_name_node_alt_destroy	
+EXPORT_SYMBOL vmlinux 0x00000000	netdev_next_lower_dev_rcu	
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_notice	
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_notify_peers	
 EXPORT_SYMBOL vmlinux 0x00000000	netdev_pick_tx	
@@ -9024,9 +9027,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	ns_capable
 EXPORT_SYMBOL vmlinux 0x00000000	ns_capable_noaudit	
 EXPORT_SYMBOL vmlinux 0x00000000	ns_capable_setid	
 EXPORT_SYMBOL vmlinux 0x00000000	ns_to_kernel_old_timeval	
-EXPORT_SYMBOL vmlinux 0x00000000	ns_to_timespec	
 EXPORT_SYMBOL vmlinux 0x00000000	ns_to_timespec64	
-EXPORT_SYMBOL vmlinux 0x00000000	ns_to_timeval	
 EXPORT_SYMBOL vmlinux 0x00000000	nsecs_to_jiffies64	
 EXPORT_SYMBOL vmlinux 0x00000000	num_registered_fb	
 EXPORT_SYMBOL vmlinux 0x00000000	numa_node	
@@ -16100,6 +16101,7 @@ EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_callback_nr_threads
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_callback_set_tcpport	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_check_flags	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_clear_inode	
+EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_clear_verifier_delegated	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_client_init_is_complete	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_client_init_status	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_clone_server	
@@ -16192,6 +16194,7 @@ EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_scan_commit_list
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_server_copy_userdata	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_server_insert_lists	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_server_remove_lists	
+EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_set_verifier	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_setattr	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_setattr_update_inode	
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs_setsecurity	
@@ -18108,7 +18111,6 @@ EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_new_control
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_new_controls	
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_new_widgets	
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_put_enum_double	
-EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_put_enum_double_locked	
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_put_pin_switch	
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_put_volsw	
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_stream_stop	
@@ -19257,10 +19259,6 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	cn_del_callback
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cn_netlink_send	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cn_netlink_send_mult	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	compat_alloc_user_space	
-EXPORT_SYMBOL_GPL vmlinux 0x00000000	compat_get_timespec	
-EXPORT_SYMBOL_GPL vmlinux 0x00000000	compat_get_timeval	
-EXPORT_SYMBOL_GPL vmlinux 0x00000000	compat_put_timespec	
-EXPORT_SYMBOL_GPL vmlinux 0x00000000	compat_put_timeval	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	component_add	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	component_add_typed	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	component_bind_all	
@@ -23278,6 +23276,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_ldisc_ref_wait
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_ldisc_release	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_mode_ioctl	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_perform_flush	
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_port_default_client_ops	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_port_install	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_port_link_device	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	tty_port_register_device	
