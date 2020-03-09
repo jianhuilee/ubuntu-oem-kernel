@@ -4990,7 +4990,7 @@ tpm_nsc
 tpm_st33zp24
 tpm_st33zp24_i2c
 tpm_st33zp24_spi
-tpm_tis_spi_mod
+tpm_tis_spi
 tpm_vtpm_proxy
 tps40422
 tps51632-regulator
