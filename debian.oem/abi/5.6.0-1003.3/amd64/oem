@@ -8308,7 +8308,6 @@ EXPORT_SYMBOL vmlinux 0x00000000	jiffies_to_usecs
 EXPORT_SYMBOL vmlinux 0x00000000	kasprintf	
 EXPORT_SYMBOL vmlinux 0x00000000	kblockd_mod_delayed_work_on	
 EXPORT_SYMBOL vmlinux 0x00000000	kblockd_schedule_work	
-EXPORT_SYMBOL vmlinux 0x00000000	kblockd_schedule_work_on	
 EXPORT_SYMBOL vmlinux 0x00000000	kd_mksound	
 EXPORT_SYMBOL vmlinux 0x00000000	kdb_grepping_flag	
 EXPORT_SYMBOL vmlinux 0x00000000	kdbgetsymval	
