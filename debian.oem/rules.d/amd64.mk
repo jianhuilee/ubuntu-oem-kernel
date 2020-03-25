@@ -22,7 +22,7 @@ do_extras_package = false
 do_tools_common = true
 do_tools_acpidbg = true
 do_zfs		= true
-do_dkms_nvidia  = false
+do_dkms_nvidia  = true
 do_dkms_vbox    = false
 
 disable_d_i     = true
