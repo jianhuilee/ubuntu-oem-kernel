@@ -726,9 +726,9 @@ firmware:       i915/kbl_huc_4.0.0.bin
 firmware:       i915/skl_dmc_ver1_27.bin
 firmware:       i915/skl_guc_33.0.0.bin
 firmware:       i915/skl_huc_2.0.0.bin
-firmware:       i915/tgl_dmc_ver2_04.bin
+firmware:       i915/tgl_dmc_ver2_06.bin
 firmware:       i915/tgl_guc_35.2.0.bin
-firmware:       i915/tgl_huc_7.0.3.bin
+firmware:       i915/tgl_huc_7.0.12.bin
 firmware:       intel/ibt-11-5.ddc
 firmware:       intel/ibt-11-5.sfi
 firmware:       intel/ibt-12-16.ddc
