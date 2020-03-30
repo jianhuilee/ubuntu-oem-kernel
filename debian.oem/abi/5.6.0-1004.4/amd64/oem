@@ -4239,6 +4239,7 @@ EXPORT_SYMBOL drivers/w1/wire 0x00000000	w1_unregister_family
 EXPORT_SYMBOL drivers/watchdog/iTCO_vendor_support 0x00000000	iTCO_vendor_check_noreboot_on	
 EXPORT_SYMBOL drivers/watchdog/iTCO_vendor_support 0x00000000	iTCO_vendor_pre_start	
 EXPORT_SYMBOL drivers/watchdog/iTCO_vendor_support 0x00000000	iTCO_vendor_pre_stop	
+EXPORT_SYMBOL drivers/watchdog/iTCO_vendor_support 0x00000000	iTCO_vendorsupport	
 EXPORT_SYMBOL fs/fscache/fscache 0x00000000	__fscache_acquire_cookie	
 EXPORT_SYMBOL fs/fscache/fscache 0x00000000	__fscache_alloc_page	
 EXPORT_SYMBOL fs/fscache/fscache 0x00000000	__fscache_attr_changed	
@@ -20022,6 +20023,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	disable_hardirq
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disable_kprobe	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disable_percpu_irq	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disk_get_part	
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	disk_has_partitions	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disk_map_sector_rcu	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disk_part_iter_exit	
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	disk_part_iter_init	
