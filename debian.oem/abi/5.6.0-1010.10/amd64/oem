@@ -3778,6 +3778,11 @@ EXPORT_SYMBOL	 drivers/scsi/ufs/ufshcd-dwc 0x00000000	ufshcd_dwc_dme_set_attrs
 EXPORT_SYMBOL	 drivers/scsi/ufs/ufshcd-dwc 0x00000000	ufshcd_dwc_link_startup_notify
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_add_bus_master
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_alloc_stream
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_bus_clk_stop
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_bus_exit_clk_stop
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_bus_prep_clk_stop
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_clear_slave_status
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_cols
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_delete_bus_master
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_deprepare_stream
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_disable_stream
@@ -3791,7 +3796,10 @@ EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_nwrite
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_prepare_stream
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_read
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_release_stream
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_rows
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_shutdown_stream
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_slave_read_prop
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_startup_stream
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_stream_add_master
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_stream_add_slave
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_stream_remove_master
@@ -3803,15 +3811,18 @@ EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	cdns_set_sdw_strea
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	cdns_xfer_msg
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	cdns_xfer_msg_defer
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_alloc_pdi
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_clock_restart
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_clock_stop
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_config_stream
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_enable_interrupt
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_exit_reset
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_init
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_irq
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_is_clock_stop
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_pdi_init
 EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_probe
-EXPORT_SYMBOL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_thread
-EXPORT_SYMBOL	 drivers/soundwire/soundwire-intel-init 0x00000000	sdw_intel_exit
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-generic-allocation 0x00000000	sdw_compute_params
+EXPORT_SYMBOL	 drivers/soundwire/soundwire-intel 0x00000000	sdw_intel_thread
 EXPORT_SYMBOL	 drivers/ssb/ssb 0x00000000	__ssb_driver_register
 EXPORT_SYMBOL	 drivers/ssb/ssb 0x00000000	ssb_admatch_base
 EXPORT_SYMBOL	 drivers/ssb/ssb 0x00000000	ssb_admatch_size
@@ -5262,6 +5273,8 @@ EXPORT_SYMBOL	 sound/core/snd 0x00000000	snd_request_card
 EXPORT_SYMBOL	 sound/core/snd 0x00000000	snd_seq_root
 EXPORT_SYMBOL	 sound/core/snd 0x00000000	snd_unregister_device
 EXPORT_SYMBOL	 sound/core/snd 0x00000000	snd_unregister_oss_device
+EXPORT_SYMBOL	 sound/core/snd-compress 0x00000000	snd_compr_free_pages
+EXPORT_SYMBOL	 sound/core/snd-compress 0x00000000	snd_compr_malloc_pages
 EXPORT_SYMBOL	 sound/core/snd-hwdep 0x00000000	snd_hwdep_new
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	__snd_pcm_lib_xfer
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	_snd_pcm_hw_param_setempty
@@ -5296,6 +5309,7 @@ EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_constraint_ranges
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_constraint_ratdens
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_constraint_ratnums
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_constraint_step
+EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_limit_rates
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_param_first
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_param_last
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_hw_param_value
@@ -5312,7 +5326,6 @@ EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_lib_mmap_iomem
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_lib_preallocate_free_for_all
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_lib_preallocate_pages
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_lib_preallocate_pages_for_all
-EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_limit_hw_rates
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_mmap_data
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_new
 EXPORT_SYMBOL	 sound/core/snd-pcm 0x00000000	snd_pcm_new_internal
@@ -5539,6 +5552,7 @@ EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_create_page_table
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_device_probe
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_device_remove
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_dsp_mailbox_init
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_dsp_only_d0i3_compatible_stream_active
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_dsp_panic
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_dsp_update_bits
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_dsp_update_bits64
@@ -5572,7 +5586,6 @@ EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_run_firmware
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_runtime_idle
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_runtime_resume
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_runtime_suspend
-EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_set_d0_substate
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_suspend
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	snd_sof_trace_notify_for_error
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_block_read
@@ -5582,12 +5595,28 @@ EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_io_read
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_io_read64
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_io_write
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_io_write64
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_deinit
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_dma_add
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_dma_info
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_dma_remove
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_init
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_points_add
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_points_info
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_probe_points_remove
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_tx_message
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_ipc_tx_message_no_pm
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_machine_check
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_machine_register
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_machine_unregister
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_mailbox_read
 EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_mailbox_write
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_copy
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_free
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_open
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_pointer
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_set_params
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compr_trigger
+EXPORT_SYMBOL	 sound/soc/sof/snd-sof 0x00000000	sof_probe_compressed_ops
 EXPORT_SYMBOL	 sound/soundcore 0x00000000	register_sound_dsp
 EXPORT_SYMBOL	 sound/soundcore 0x00000000	register_sound_mixer
 EXPORT_SYMBOL	 sound/soundcore 0x00000000	register_sound_special
@@ -5711,6 +5740,7 @@ EXPORT_SYMBOL	 vmlinux 0x00000000	__block_write_full_page
 EXPORT_SYMBOL	 vmlinux 0x00000000	__blockdev_direct_IO
 EXPORT_SYMBOL	 vmlinux 0x00000000	__bread_gfp
 EXPORT_SYMBOL	 vmlinux 0x00000000	__breadahead
+EXPORT_SYMBOL	 vmlinux 0x00000000	__breadahead_gfp
 EXPORT_SYMBOL	 vmlinux 0x00000000	__break_lease
 EXPORT_SYMBOL	 vmlinux 0x00000000	__brelse
 EXPORT_SYMBOL	 vmlinux 0x00000000	__cachemode2pte_tbl
@@ -15119,8 +15149,13 @@ EXPORT_SYMBOL_GPL	 drivers/slimbus/slimbus 0x00000000	slim_writeb
 EXPORT_SYMBOL_GPL	 drivers/slimbus/slimbus 0x00000000	slim_xfer_msg
 EXPORT_SYMBOL_GPL	 drivers/slimbus/slimbus 0x00000000	slimbus_bus
 EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	__sdw_register_driver
+EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	__sdw_register_master_driver
 EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_bus_type
+EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_master_device_add
+EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_master_device_process_wake_event
+EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_master_device_startup
 EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_unregister_driver
+EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-bus 0x00000000	sdw_unregister_master_driver
 EXPORT_SYMBOL_GPL	 drivers/soundwire/soundwire-cadence 0x00000000	sdw_cdns_debugfs_init
 EXPORT_SYMBOL_GPL	 drivers/spi/spi-bitbang 0x00000000	spi_bitbang_cleanup
 EXPORT_SYMBOL_GPL	 drivers/spi/spi-bitbang 0x00000000	spi_bitbang_init
@@ -18061,12 +18096,11 @@ EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_update_dai
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dapm_weak_routes
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_debugfs_root
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_be_can_update
-EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_be_get_state
-EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_be_set_state
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_can_be_free_stop
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_can_be_params
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_fe_can_update
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_get_substream
+EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_dpcm_runtime_update
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_find_dai
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_free_ac97_component
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_get_dai_id
@@ -18121,6 +18155,9 @@ EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_register_component
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_remove_pcm_runtime
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_resume
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_rtdcom_lookup
+EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_runtime_activate
+EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_runtime_calc_hw
+EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_runtime_deactivate
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_runtime_set_dai_fmt
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_set_ac97_ops
 EXPORT_SYMBOL_GPL	 sound/soc/snd-soc-core 0x00000000	snd_soc_set_ac97_ops_of_reset
@@ -23862,13 +23899,13 @@ SND_SOC_SOF_INTEL_HDA_COMMON EXPORT_SYMBOL 0x00000000	jsl_chip_info	sound/soc/so
 SND_SOC_SOF_INTEL_HDA_COMMON EXPORT_SYMBOL 0x00000000	sof_apl_ops	sound/soc/sof/intel/snd-sof-intel-hda-common
 SND_SOC_SOF_INTEL_HDA_COMMON EXPORT_SYMBOL 0x00000000	sof_cnl_ops	sound/soc/sof/intel/snd-sof-intel-hda-common
 SND_SOC_SOF_INTEL_HDA_COMMON EXPORT_SYMBOL 0x00000000	tgl_chip_info	sound/soc/sof/intel/snd-sof-intel-hda-common
-SND_SOC_SOF_INTEL_HIFI_EP_IPC EXPORT_SYMBOL 0x00000000	intel_ipc_msg_data	sound/soc/sof/intel/snd-sof-intel-ipc
-SND_SOC_SOF_INTEL_HIFI_EP_IPC EXPORT_SYMBOL 0x00000000	intel_ipc_pcm_params	sound/soc/sof/intel/snd-sof-intel-ipc
-SND_SOC_SOF_INTEL_HIFI_EP_IPC EXPORT_SYMBOL 0x00000000	intel_pcm_close	sound/soc/sof/intel/snd-sof-intel-ipc
-SND_SOC_SOF_INTEL_HIFI_EP_IPC EXPORT_SYMBOL 0x00000000	intel_pcm_open	sound/soc/sof/intel/snd-sof-intel-ipc
-SND_SOC_SOF_MERRIFIELD EXPORT_SYMBOL 0x00000000	sof_tng_ops	sound/soc/sof/intel/snd-sof-intel-byt
-SND_SOC_SOF_MERRIFIELD EXPORT_SYMBOL 0x00000000	tng_chip_info	sound/soc/sof/intel/snd-sof-intel-byt
 SND_SOC_SOF_XTENSA EXPORT_SYMBOL 0x00000000	sof_xtensa_arch_ops	sound/soc/sof/xtensa/snd-sof-xtensa-dsp
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_acpi_scan	drivers/soundwire/soundwire-intel
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_enable_irq	drivers/soundwire/soundwire-intel
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_exit	drivers/soundwire/soundwire-intel
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_probe	drivers/soundwire/soundwire-intel
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_process_wakeen_event	drivers/soundwire/soundwire-intel
+SOUNDWIRE_INTEL_INIT EXPORT_SYMBOL 0x00000000	sdw_intel_startup	drivers/soundwire/soundwire-intel
 USB_STORAGE EXPORT_SYMBOL_GPL 0x00000000	fill_inquiry_response	drivers/usb/storage/usb-storage
 USB_STORAGE EXPORT_SYMBOL_GPL 0x00000000	usb_stor_Bulk_reset	drivers/usb/storage/usb-storage
 USB_STORAGE EXPORT_SYMBOL_GPL 0x00000000	usb_stor_Bulk_transport	drivers/usb/storage/usb-storage

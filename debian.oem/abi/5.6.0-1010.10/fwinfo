@@ -1117,6 +1117,9 @@ firmware:       nvidia/gv100/gr/sw_ctx.bin
 firmware:       nvidia/gv100/gr/sw_method_init.bin
 firmware:       nvidia/gv100/gr/sw_nonctx.bin
 firmware:       nvidia/gv100/nvdec/scrubber.bin
+firmware:       nvidia/gv100/sec2/desc.bin
+firmware:       nvidia/gv100/sec2/image.bin
+firmware:       nvidia/gv100/sec2/sig.bin
 firmware:       nvidia/tu102/acr/bl.bin
 firmware:       nvidia/tu102/acr/ucode_ahesasc.bin
 firmware:       nvidia/tu102/acr/ucode_asb.bin
@@ -1135,6 +1138,9 @@ firmware:       nvidia/tu102/gr/sw_ctx.bin
 firmware:       nvidia/tu102/gr/sw_method_init.bin
 firmware:       nvidia/tu102/gr/sw_nonctx.bin
 firmware:       nvidia/tu102/nvdec/scrubber.bin
+firmware:       nvidia/tu102/sec2/desc.bin
+firmware:       nvidia/tu102/sec2/image.bin
+firmware:       nvidia/tu102/sec2/sig.bin
 firmware:       nvidia/tu104/acr/bl.bin
 firmware:       nvidia/tu104/acr/ucode_ahesasc.bin
 firmware:       nvidia/tu104/acr/ucode_asb.bin
@@ -1153,6 +1159,9 @@ firmware:       nvidia/tu104/gr/sw_ctx.bin
 firmware:       nvidia/tu104/gr/sw_method_init.bin
 firmware:       nvidia/tu104/gr/sw_nonctx.bin
 firmware:       nvidia/tu104/nvdec/scrubber.bin
+firmware:       nvidia/tu104/sec2/desc.bin
+firmware:       nvidia/tu104/sec2/image.bin
+firmware:       nvidia/tu104/sec2/sig.bin
 firmware:       nvidia/tu106/acr/bl.bin
 firmware:       nvidia/tu106/acr/ucode_ahesasc.bin
 firmware:       nvidia/tu106/acr/ucode_asb.bin
@@ -1171,6 +1180,9 @@ firmware:       nvidia/tu106/gr/sw_ctx.bin
 firmware:       nvidia/tu106/gr/sw_method_init.bin
 firmware:       nvidia/tu106/gr/sw_nonctx.bin
 firmware:       nvidia/tu106/nvdec/scrubber.bin
+firmware:       nvidia/tu106/sec2/desc.bin
+firmware:       nvidia/tu106/sec2/image.bin
+firmware:       nvidia/tu106/sec2/sig.bin
 firmware:       nvidia/tu116/acr/bl.bin
 firmware:       nvidia/tu116/acr/ucode_ahesasc.bin
 firmware:       nvidia/tu116/acr/ucode_asb.bin
@@ -1189,6 +1201,9 @@ firmware:       nvidia/tu116/gr/sw_ctx.bin
 firmware:       nvidia/tu116/gr/sw_method_init.bin
 firmware:       nvidia/tu116/gr/sw_nonctx.bin
 firmware:       nvidia/tu116/nvdec/scrubber.bin
+firmware:       nvidia/tu116/sec2/desc.bin
+firmware:       nvidia/tu116/sec2/image.bin
+firmware:       nvidia/tu116/sec2/sig.bin
 firmware:       nvidia/tu117/acr/bl.bin
 firmware:       nvidia/tu117/acr/ucode_ahesasc.bin
 firmware:       nvidia/tu117/acr/ucode_asb.bin
@@ -1207,6 +1222,9 @@ firmware:       nvidia/tu117/gr/sw_ctx.bin
 firmware:       nvidia/tu117/gr/sw_method_init.bin
 firmware:       nvidia/tu117/gr/sw_nonctx.bin
 firmware:       nvidia/tu117/nvdec/scrubber.bin
+firmware:       nvidia/tu117/sec2/desc.bin
+firmware:       nvidia/tu117/sec2/image.bin
+firmware:       nvidia/tu117/sec2/sig.bin
 firmware:       orinoco_ezusb_fw
 firmware:       ositech/Xilinx7OD.bin
 firmware:       pca200e_ecd.bin2
