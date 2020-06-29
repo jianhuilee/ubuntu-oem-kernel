@@ -2610,6 +2610,7 @@ EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_cmd_free_uar
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_cmd_init
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_cmd_init_async_ctx
+EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_cmd_set_state
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_comp_irq_get_affinity_mask
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_comp_vectors_count
 EXPORT_SYMBOL	 drivers/net/ethernet/mellanox/mlx5/core/mlx5_core 0x00000000	mlx5_core_alloc_pd
@@ -5038,7 +5039,7 @@ EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_end_call
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_get_epoch
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_get_peer
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_get_reply_time
-EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_get_rtt
+EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_get_srtt
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_new_call_notification
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_recv_data
 EXPORT_SYMBOL	 net/rxrpc/rxrpc 0x00000000	rxrpc_kernel_send_data
@@ -19459,6 +19460,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_shash_final
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_shash_finup
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_shash_setkey
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_shash_update
+EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_shoot_alg
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_skcipher_decrypt
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_skcipher_encrypt
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	crypto_skcipher_setkey
@@ -20951,7 +20953,6 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_alloc
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_for_each_dev
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_get
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_get_by_id
-EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_get_for_dev
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_get_iommudata
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_id
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	iommu_group_put
