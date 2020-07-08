@@ -8457,6 +8457,7 @@ EXPORT_SYMBOL	 vmlinux 0x00000000	ktime_get_real_ts64
 EXPORT_SYMBOL	 vmlinux 0x00000000	kvasprintf
 EXPORT_SYMBOL	 vmlinux 0x00000000	kvasprintf_const
 EXPORT_SYMBOL	 vmlinux 0x00000000	kvfree
+EXPORT_SYMBOL	 vmlinux 0x00000000	kvfree_sensitive
 EXPORT_SYMBOL	 vmlinux 0x00000000	kvmalloc_node
 EXPORT_SYMBOL	 vmlinux 0x00000000	kzfree
 EXPORT_SYMBOL	 vmlinux 0x00000000	laptop_mode
@@ -12698,7 +12699,6 @@ EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-common 0x00000000	vb
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-common 0x00000000	vb2_thread_stop
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-common 0x00000000	vb2_wait_for_all_buffers
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-common 0x00000000	vb2_write
-EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-dma-contig 0x00000000	vb2_dma_contig_clear_max_seg_size
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-dma-contig 0x00000000	vb2_dma_contig_memops
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-dma-contig 0x00000000	vb2_dma_contig_set_max_seg_size
 EXPORT_SYMBOL_GPL	 drivers/media/common/videobuf2/videobuf2-dma-sg 0x00000000	vb2_dma_sg_memops
@@ -17756,12 +17756,12 @@ EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	hda_main_out_b
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_activate_path
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_add_new_path
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_add_kctl
-EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_add_micmute_led
+EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_add_micmute_led_cdev
+EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_add_mute_led_cdev
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_build_controls
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_build_pcms
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_check_power_status
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_fix_pin_power
-EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_fixup_micmute_led
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_free
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_hp_automute
 EXPORT_SYMBOL_GPL	 sound/pci/hda/snd-hda-codec-generic 0x00000000	snd_hda_gen_init
