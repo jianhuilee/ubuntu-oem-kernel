@@ -742,8 +742,11 @@ EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_mst_topology_mgr
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_mst_topology_state_funcs
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_psr_setup_time
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_read_desc
+EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_read_downstream_info
+EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_read_dpcd_caps
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_remote_aux_init
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_send_power_updown_phy
+EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_send_real_edid_checksum
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_start_crc
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_stop_crc
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_update_payload_part1
