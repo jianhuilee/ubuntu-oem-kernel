@@ -105,7 +105,7 @@ static const struct snd_soc_acpi_adr_device rt711_0_adr[] = {
 	}
 };
 
-static const struct snd_soc_acpi_adr_device rt1308_1_adr[] = {
+static const struct snd_soc_acpi_adr_device rt1308_1_single_adr[] = {
 	{
 		.adr = 0x000110025D130800,
 		.num_endpoints = 1,
@@ -177,8 +177,8 @@ static const struct snd_soc_acpi_link_adr cml_3_in_1_mono_amp[] = {
 	},
 	{
 		.mask = BIT(1),
-		.num_adr = ARRAY_SIZE(rt1308_1_adr),
-		.adr_d = rt1308_1_adr,
+		.num_adr = ARRAY_SIZE(rt1308_1_single_adr),
+		.adr_d = rt1308_1_single_adr,
 	},
 	{
 		.mask = BIT(3),
