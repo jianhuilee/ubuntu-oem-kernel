@@ -1,9 +1,3 @@
-linux-5.10 (5.10.0-0.0) groovy; urgency=medium
-
-  * Empty entry
-
- -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 26 Oct 2020 14:47:01 +0200
-
 linux-5.9 (5.9.0-2.3) groovy; urgency=medium
 
   * Fix system reboot when disconnecting WiFi (LP: #1899726)
