@@ -294,6 +294,34 @@ static const struct dmi_system_id s0ix_supported_systems[] = {
 			DMI_MATCH(DMI_PRODUCT_SKU, "0A42"),
 		},
 	},
+	{
+		/* Dell AIO 0x0A46 */
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+			DMI_MATCH(DMI_PRODUCT_SKU, "0A46"),
+		},
+	},
+	{
+		/* Dell AIO 0x0A47 */
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+			DMI_MATCH(DMI_PRODUCT_SKU, "0A47"),
+		},
+	},
+	{
+		/* Dell AIO 0x0A48 */
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+			DMI_MATCH(DMI_PRODUCT_SKU, "0A48"),
+		},
+	},
+	{
+		/* Dell AIO 0x0A49 */
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+			DMI_MATCH(DMI_PRODUCT_SKU, "0A49"),
+		},
+	},
 	{ }
 };
 
