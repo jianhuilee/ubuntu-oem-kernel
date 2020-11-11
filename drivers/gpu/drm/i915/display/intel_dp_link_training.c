@@ -130,11 +130,16 @@ static bool intel_dp_link_max_vswing_reached(struct intel_dp *intel_dp)
 static bool
 intel_dp_link_training_clock_recovery(struct intel_dp *intel_dp)
 {
+	struct drm_i915_private *dev_priv;
 	u8 voltage;
 	int voltage_tries, cr_tries, max_cr_tries;
 	bool max_vswing_reached = false;
 	u8 link_config[2];
 	u8 link_bw, rate_select;
+
+	if (intel_dp->attached_connector) {
+		dev_priv = to_i915(intel_dp->attached_connector->base.dev);
+	}
 
 	if (intel_dp->prepare_link_retrain)
 		intel_dp->prepare_link_retrain(intel_dp);
@@ -187,10 +192,15 @@ intel_dp_link_training_clock_recovery(struct intel_dp *intel_dp)
 		max_cr_tries = 80;
 
 	voltage_tries = 1;
+
 	for (cr_tries = 0; cr_tries < max_cr_tries; ++cr_tries) {
 		u8 link_status[DP_LINK_STATUS_SIZE];
 
-		drm_dp_link_train_clock_recovery_delay(intel_dp->dpcd);
+		if (dev_priv && IS_TGL_REVID(dev_priv, TGL_REVID_A0, TGL_REVID_C0)) {
+			drm_dp_link_train_clock_recovery_larger_delay(intel_dp->dpcd);
+		} else {
+			drm_dp_link_train_clock_recovery_delay(intel_dp->dpcd);
+		}
 
 		if (!intel_dp_get_link_status(intel_dp, link_status)) {
 			DRM_ERROR("failed to get link status\n");
