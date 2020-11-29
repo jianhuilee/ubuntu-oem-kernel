@@ -208,6 +208,7 @@ EXPORT_SYMBOL_GPL(int340x_thermal_read_trips);
 static struct thermal_zone_params int340x_thermal_params = {
 	.governor_name = "user_space",
 	.no_hwmon = true,
+	.userspace = true,
 };
 
 struct int34x_thermal_zone *int340x_thermal_zone_add(struct acpi_device *adev,
