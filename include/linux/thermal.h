@@ -276,6 +276,8 @@ struct thermal_zone_params {
 	 */
 	bool no_hwmon;
 
+	bool userspace;
+
 	int num_tbps;	/* Number of tbp entries */
 	struct thermal_bind_params *tbp;
 

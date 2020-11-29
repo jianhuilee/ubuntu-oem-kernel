@@ -474,6 +474,9 @@ void thermal_zone_device_update(struct thermal_zone_device *tz,
 {
 	int count;
 
+	if (tz->tzp && tz->tzp->userspace)
+		return;
+
 	if (atomic_read(&in_suspend))
 		return;
 
