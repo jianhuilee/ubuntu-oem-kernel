@@ -269,6 +269,10 @@ static struct thermal_zone_device_ops tzd_ops = {
 	.get_trip_temp = pch_get_trip_temp,
 };
 
+static struct thermal_zone_params tzd_params = {
+	.userspace = true,
+};
+
 enum board_ids {
 	board_hsw,
 	board_wpt,
@@ -345,7 +349,7 @@ static int intel_pch_thermal_probe(struct pci_dev *pdev,
 		goto error_cleanup;
 
 	ptd->tzd = thermal_zone_device_register(bi->name, nr_trips, 0, ptd,
-						&tzd_ops, NULL, 0, 0);
+						&tzd_ops, &tzd_params, 0, 0);
 	if (IS_ERR(ptd->tzd)) {
 		dev_err(&pdev->dev, "Failed to register thermal zone %s\n",
 			bi->name);
