@@ -717,6 +717,7 @@ EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_get_edid_quirks
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_link_rate_to_bw_code
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_link_train_channel_eq_delay
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_link_train_clock_recovery_delay
+EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_link_train_clock_recovery_larger_delay
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_mst_add_affected_dsc_crtcs
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_mst_allocate_vcpi
 EXPORT_SYMBOL	 drivers/gpu/drm/drm_kms_helper 0x00000000	drm_dp_mst_atomic_check
