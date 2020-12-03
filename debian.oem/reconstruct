@@ -1,4 +1,14 @@
 # Recreate any symlinks created since the orig.
 # Remove any files deleted from the orig.
+rm -f 'drivers/mtd/spi-nor/aspeed-smc.c'
+rm -f 'drivers/mtd/spi-nor/cadence-quadspi.c'
+rm -f 'drivers/mtd/spi-nor/hisi-sfc.c'
+rm -f 'drivers/mtd/spi-nor/intel-spi-pci.c'
+rm -f 'drivers/mtd/spi-nor/intel-spi-platform.c'
+rm -f 'drivers/mtd/spi-nor/intel-spi.c'
+rm -f 'drivers/mtd/spi-nor/intel-spi.h'
+rm -f 'drivers/mtd/spi-nor/mtk-quadspi.c'
+rm -f 'drivers/mtd/spi-nor/nxp-spifi.c'
+rm -f 'drivers/mtd/spi-nor/spi-nor.c'
 chmod +x 'update-version-dkms'
 exit 0
