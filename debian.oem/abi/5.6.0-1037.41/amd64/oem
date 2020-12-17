@@ -18581,7 +18581,6 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_os_unmap_memory
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pci_check_ejectable
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pci_detect_ejectable
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pci_find_root
-EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pm_set_bridge_wakeup
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pm_set_device_wakeup
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_pm_wakeup_event
 EXPORT_SYMBOL_GPL	 vmlinux 0x00000000	acpi_processor_claim_cst_control
