@@ -2525,6 +2525,8 @@ enum ieee80211_eid {
 	WLAN_EID_QUIET_CHANNEL = 198,
 	WLAN_EID_OPMODE_NOTIF = 199,
 
+	WLAN_EID_REDUCED_NEIGHBOR_REPORT = 201,
+
 	WLAN_EID_VENDOR_SPECIFIC = 221,
 	WLAN_EID_QOS_PARAMETER = 222,
 	WLAN_EID_CAG_NUMBER = 237,
@@ -3420,5 +3422,31 @@ static inline bool for_each_element_completed(const struct element *element,
 {
 	return (const u8 *)element == (const u8 *)data + datalen;
 }
+
+/*
+ * reduced neighbor report, based on Draft P802.11ax_D5.0,
+ * section 9.4.2.170
+ */
+#define IEEE80211_AP_INFO_TBTT_HDR_TYPE				0x03
+#define IEEE80211_AP_INFO_TBTT_HDR_FILTERED			0x04
+#define IEEE80211_AP_INFO_TBTT_HDR_COLOC			0x08
+#define IEEE80211_AP_INFO_TBTT_HDR_COUNT			0xF0
+#define IEEE80211_TBTT_INFO_OFFSET_BSSID_BSS_PARAM		8
+#define IEEE80211_TBTT_INFO_OFFSET_BSSID_SSSID_BSS_PARAM	12
+
+#define IEEE80211_RNR_TBTT_PARAMS_OCT_RECOMMENDED		0x01
+#define IEEE80211_RNR_TBTT_PARAMS_SAME_SSID			0x02
+#define IEEE80211_RNR_TBTT_PARAMS_MULTI_BSSID			0x04
+#define IEEE80211_RNR_TBTT_PARAMS_TRANSMITTED_BSSID		0x08
+#define IEEE80211_RNR_TBTT_PARAMS_COLOC_ESS			0x10
+#define IEEE80211_RNR_TBTT_PARAMS_PROBE_ACTIVE			0x20
+#define IEEE80211_RNR_TBTT_PARAMS_COLOC_AP			0x40
+
+struct ieee80211_neighbor_ap_info {
+       u8 tbtt_info_hdr;
+       u8 tbtt_info_len;
+       u8 op_class;
+       u8 channel;
+} __packed;
 
 #endif /* LINUX_IEEE80211_H */
