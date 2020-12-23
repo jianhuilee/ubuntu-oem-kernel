@@ -1182,6 +1182,7 @@ struct sta_txpwr {
  * @he_capa: HE capabilities of station
  * @he_capa_len: the length of the HE capabilities
  * @airtime_weight: airtime scheduler weight for this station
+ * @txpwr: transmit power for an associated station
  */
 struct station_parameters {
 	const u8 *supported_rates;
@@ -4569,6 +4570,9 @@ struct cfg80211_pmsr_capabilities {
  * @txq_limit: configuration of internal TX queue frame limit
  * @txq_memory_limit: configuration internal TX queue memory limit
  * @txq_quantum: configuration of internal TX queue scheduler quantum
+ *
+ * @tx_queue_len: allow setting transmit queue len for drivers not using
+ *	wake_tx_queue
  *
  * @support_mbssid: can HW support association with nontransmitted AP
  * @support_only_he_mbssid: don't parse MBSSID elements if it is not
