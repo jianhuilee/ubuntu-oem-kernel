@@ -632,6 +632,7 @@ CONFIG_TI_SYSC                                  policy<{'armhf': 'y'}>
 CONFIG_UNIPHIER_SYSTEM_BUS                      policy<{'armhf': 'y'}>
 CONFIG_VEXPRESS_CONFIG                          policy<{'arm64': 'y', 'armhf': 'y'}>
 CONFIG_FSL_MC_BUS                               policy<{'arm64': 'y'}>
+CONFIG_MHI_BUS                                  policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm', 's390x': 'n'}>
 
 # Menu: Device Drivers >> Character devices
 CONFIG_DEVMEM                                   policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y', 's390x': 'y'}>
@@ -6062,6 +6063,15 @@ CONFIG_CARL9170_LEDS                            policy<{'amd64': 'y', 'arm64': '
 CONFIG_CARL9170_DEBUGFS                         policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'i386': 'n', 'ppc64el': 'n'}>
 CONFIG_CARL9170_HWRNG                           policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y'}>
 
+# Menu: Device Drivers >> Network device support >> Wireless LAN >> Atheros/Qualcomm devices >> Qualcomm Technologies 802.11ax chipset support
+CONFIG_ATH11K                                   policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
+CONFIG_ATH11K_PCI                               policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
+CONFIG_ATH11K_AHB                               policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n'}>
+CONFIG_ATH11K_DEBUG                             policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n'}>
+CONFIG_ATH11K_DEBUGFS                           policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'ppc64el': 'y'}>
+CONFIG_ATH11K_SPECTRAL                          policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'ppc64el': 'y'}>
+CONFIG_ATH11K_TRACING                           policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'ppc64el': 'y'}>
+
 # Menu: Device Drivers >> Network device support >> Wireless LAN >> Atheros/Qualcomm devices >> Wilocity 60g WiFi card wil6210 support
 CONFIG_WIL6210                                  policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
 CONFIG_WIL6210_ISR_COR                          policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y'}>
@@ -11296,9 +11306,10 @@ CONFIG_DNS_RESOLVER                             policy<{'amd64': 'y', 'arm64': '
 CONFIG_NETLINK_DIAG                             policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm', 's390x': 'm'}>
 CONFIG_NET_NSH                                  policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm', 's390x': 'm'}>
 CONFIG_HSR                                      policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm', 's390x': 'n'}>
-CONFIG_QRTR                                     policy<{'arm64': 'm', 'armhf': 'm'}>
-CONFIG_QRTR_SMD                                 policy<{'arm64': 'm', 'armhf': 'm'}>
-CONFIG_QRTR_TUN                                 policy<{'arm64': 'm', 'armhf': 'm'}>
+CONFIG_QRTR                                     policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
+CONFIG_QRTR_MHI                                 policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
+CONFIG_QRTR_SMD                                 policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
+CONFIG_QRTR_TUN                                 policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm'}>
 CONFIG_CGROUP_NET_PRIO                          policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y', 's390x': 'y'}>
 CONFIG_CGROUP_NET_CLASSID                       policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y', 's390x': 'y'}>
 CONFIG_BPF_JIT                                  policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y', 's390x': 'y'}>
