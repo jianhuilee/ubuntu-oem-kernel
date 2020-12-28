@@ -10,5 +10,7 @@ rm -f 'drivers/mtd/spi-nor/intel-spi.h'
 rm -f 'drivers/mtd/spi-nor/mtk-quadspi.c'
 rm -f 'drivers/mtd/spi-nor/nxp-spifi.c'
 rm -f 'drivers/mtd/spi-nor/spi-nor.c'
+rm -f 'drivers/net/wireless/ath/ath11k/debug_htt_stats.c'
+rm -f 'drivers/net/wireless/ath/ath11k/debug_htt_stats.h'
 chmod +x 'update-version-dkms'
 exit 0
