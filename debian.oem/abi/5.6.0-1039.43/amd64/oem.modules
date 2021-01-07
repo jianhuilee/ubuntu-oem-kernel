@@ -426,6 +426,8 @@ ath10k_core
 ath10k_pci
 ath10k_sdio
 ath10k_usb
+ath11k
+ath11k_pci
 ath3k
 ath5k
 ath6kl_core
@@ -2764,6 +2766,7 @@ metronomefb
 meye
 mf6x4
 mgag200
+mhi
 mi0283qt
 mic_bus
 mic_card
@@ -3191,6 +3194,7 @@ notifier-error-inject
 nouveau
 nozomi
 npcm750-pwm-fan
+ns
 ns558
 ns83820
 nsh
@@ -3569,9 +3573,14 @@ qlogic_cs
 qlogicfas408
 qm1d1b0004
 qm1d1c0042
+qmi_helpers
 qmi_wwan
 qnx4
 qnx6
+qrtr
+qrtr-mhi
+qrtr-smd
+qrtr-tun
 qsemi
 qt1010
 qt1050
