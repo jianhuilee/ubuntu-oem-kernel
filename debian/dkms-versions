@@ -1,5 +1,5 @@
-zfs-linux 0.8.4-1ubuntu11
-nvidia-graphics-drivers-450 450.102.04-0ubuntu0.20.04.1 transition=nvidia-graphics-drivers-440
+zfs-linux 0.8.4-1ubuntu11.2
+nvidia-graphics-drivers-450 450.102.04-0ubuntu0.20.10.2 transition=nvidia-graphics-drivers-440
 nvidia-graphics-drivers-455 455.45.01-0ubuntu0.20.04.1 signonly
-nvidia-graphics-drivers-460 460.39-0ubuntu0.20.04.1 transition=nvidia-graphics-drivers-455
+nvidia-graphics-drivers-460 460.56-0ubuntu0.20.10.1 transition=nvidia-graphics-drivers-455
 virtualbox 6.1.16-dfsg-6~ubuntu1.20.04.1
