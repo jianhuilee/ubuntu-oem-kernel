@@ -8,6 +8,15 @@
 #include "intel_display_types.h"
 #include "intel_quirks.h"
 
+/* 
+ * Enable specific machines on Dell
+ */
+static void quirk_psr_force_enable(struct drm_i915_private *i915)
+{
+	i915->params.enable_psr = 1;
+	drm_info(&i915->drm, "applying forcing PSR enable quirk\n");
+}
+
 /*
  * Some machines (Lenovo U160) do not work with SSC on LVDS for some reason
  */
@@ -72,6 +81,12 @@ static int intel_dmi_reverse_brightness(const struct dmi_system_id *id)
 	return 1;
 }
 
+static int intel_dmi_force_enable_psr(const struct dmi_system_id *id)
+{
+	DRM_INFO("PSR forced on %s\n", id->ident);
+	return 1;
+}
+
 static const struct intel_dmi_quirk intel_dmi_quirks[] = {
 	{
 		.dmi_id_list = &(const struct dmi_system_id[]) {
@@ -95,6 +110,44 @@ static const struct intel_dmi_quirk intel_dmi_quirks[] = {
 			{ }  /* terminating entry */
 		},
 		.hook = quirk_invert_brightness,
+	},
+	{
+		.dmi_id_list = &(const struct dmi_system_id[]) {
+			{
+				.callback = intel_dmi_force_enable_psr,
+				.ident = "Dell XPS 15 9560",
+				.matches = {
+				    DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+					DMI_MATCH(DMI_PRODUCT_NAME, "XPS 15 9560"),
+				},
+			},
+			{
+				.callback = intel_dmi_force_enable_psr,
+				.ident = "Dell XPS 13 9360",
+				.matches = {
+				    DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+					DMI_MATCH(DMI_PRODUCT_NAME, "XPS 13 9360"),
+				},
+			},
+			{
+				.callback = intel_dmi_force_enable_psr,
+				.ident = "Dell XPS 15 9570",
+				.matches = {
+				    DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+					DMI_MATCH(DMI_PRODUCT_NAME, "XPS 15 9570"),
+				},
+			},
+			{
+				.callback = intel_dmi_force_enable_psr,
+				.ident = "Dell XPS 13 9370",
+				.matches = {
+				    DMI_MATCH(DMI_SYS_VENDOR, "Dell Inc."),
+					DMI_MATCH(DMI_PRODUCT_NAME, "XPS 13 9370"),
+				},
+			},
+			{ }  /* terminating entry */
+		},
+		.hook = quirk_psr_force_enable,
 	},
 };
 
